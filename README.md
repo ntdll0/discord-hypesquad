@@ -1,2 +1,2 @@
-# discord-hypesquad
-Get discord hypesquad after its been removed.
+# Discord hypesquad badges
+Allows you to get discord hypesquad badges after they were removed from client.
