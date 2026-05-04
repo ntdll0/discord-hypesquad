@@ -33,15 +33,15 @@ Allows you to get discord hypesquad badges after they were removed from client.
     window.webpackChunkdiscord_app.pop();
 
     if (!token) {
-        console.error("[❌] - Failed to retrieve token");
+        console.error("Failed to retrieve token");
         return;
     }
 
-    console.log("[✅] - Token successfully retrieved");
+    console.log("Token successfully retrieved");
    
     const houses = ["bravery", "brilliance", "balance"];
     if (!houses.includes(house.toLowerCase())) {
-        console.error("[❌] - Invalid house! Please, use: bravery / brilliance / balance");
+        console.error("Invalid house! Please, use: bravery / brilliance / balance");
         return;
     }
 
@@ -60,10 +60,10 @@ Allows you to get discord hypesquad badges after they were removed from client.
             body: JSON.stringify({ house_id: houseId })
         });
 
-        if (response.status === 204) console.log(`[✅] Successfully activated your HYPESQUAD house to: ${house}`);
-        else console.error("[❌] - Failed to change house");
+        if (response.status === 204) console.log(`Successfully activated your HYPESQUAD house to: ${house}`);
+        else console.error("Failed to change house");
     } catch (err) {
-        console.error("[❌] - Error:", err);
+        console.error(err);
     }
 })();
 ```
